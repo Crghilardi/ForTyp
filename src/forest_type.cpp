@@ -1725,8 +1725,9 @@ std::map<int, std::string> type_name = {
 {999, "Nonstocked"}
 };
 
-std::string fortyp_name(int ftype){
-    return type_name[ftype] ;     
+
+char * fortyp_name(int ftype){
+    return type_name[ftype].data();     
 }
 
 std::map<int, std::string> typegroup_name = {
@@ -1762,9 +1763,14 @@ std::map<int, std::string> typegroup_name = {
 {999, "Nonstocked"}
 };
 
-std::string fortypgroup_name(int ftg){
-    return typegroup_name[ftg];
+// std::string fortypgroup_name(int ftg){
+//     return typegroup_name[ftg];
+// }
+
+char * fortypgroup_name(int ftg){
+    return typegroup_name[ftg].data();
 }
+
 
 //map forest type to forest type group
 std::map<int, int> typegroup = {
