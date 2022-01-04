@@ -645,7 +645,7 @@ std::array<double, 211> s = stocking_values(treeList);
     othspc = s[190];
     //! TOTAL FOREST STOCKING (1-210)
     for (auto i : s) {
-        totstk += s[i];
+        totstk += i;
     };
     //END -- ASSIGNMENT OF INITIAL TYPES TO COMBINED TYPE GROUPS;
 
