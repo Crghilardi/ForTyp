@@ -19,7 +19,7 @@ There are also convenience lookup tables to convert between forest type, forest 
 If the forest type code is not found, it will just return a null string.
 
 ## Compilation Instructions
-A shared library `libfortyp` can be built using `CMake` and supports out-of-source builds.
+A library `libfortyp` can be built using `CMake` and supports out-of-source builds.
 
 ```shell
 git clone
@@ -30,7 +30,7 @@ mkdir build #or whatever you want to call it
 
 cd build
 
-cmake ..
+cmake .. #add -DBUILD_SHARED_LIBS=ON for shared library, otherwise will be static
 
 make
 ```

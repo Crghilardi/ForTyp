@@ -2,7 +2,7 @@ project(fortyp LANGUAGES CXX)
 
 set(LIBRARY_OUTPUT_PATH ../lib)
 
-add_library(fortyp SHARED
+add_library(fortyp
 ${CMAKE_CURRENT_LIST_DIR}/stocking_values.cpp
 ${CMAKE_CURRENT_LIST_DIR}/forest_type.cpp
 )
